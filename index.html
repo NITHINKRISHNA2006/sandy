@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanna’s Personal Assistant</title>
+</head>
+
+<body>
+        <!-- Sidebar -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Chat</a>
+            <a href="#">Tasks</a>
+            <a href="#">Profile</a>
+        </div>
+
+        <!-- Open button -->
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+        <!-- Content -->
+        <div id="main" class="content">
+            <h2 style="color:#00ffcc;">🤖 AI Buddy</h2>
+
+            <div class="card">
+                <h3>Chat with Sandy</h3>
+                <div class="chat-box" id="chatMessages"></div>
+                <div class="chat-input">
+                    <input type="text" id="chatInput" placeholder="Type a message..." />
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Task Manager</h2>
+                <input type="text" placeholder="Enter a task">
+                <button>Add Task</button>
+            </div>
+
+            <div class="card">
+                <h2>Tasks</h2>
+                <p>📊 Finish project report</p>
+                <p>📝 Plan tomorrow's work</p>
+                <p>➕ Add new task</p>
+            </div>
+
+            <div class="card">
+                <h3>Mood</h3>
+                <p>😊 Feeling good today!</p>
+            </div>
+
+            <div class="card">
+                <h3>Weather</h3>
+                <p>☀️ 32°C, Chennai</p>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
